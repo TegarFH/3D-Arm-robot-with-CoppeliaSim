@@ -9,21 +9,21 @@ Forward Kinematics — 4-DOF Robot Manipulator
 
 Proyek ini mensimulasikan gerakan robot manipulator 4-DOF menggunakan metode *forward kinematics*. Dengan memasukkan sudut pada setiap joint, program akan menghitung ke mana posisi ujung lengan robot (*end-effector*) berada — lalu menampilkannya langsung dalam bentuk visualisasi 3D dan simulasi di CoppeliaSim.
 
-#Desk
+# Desk
 Salah satu tantangan klasik dalam robotika adalah: *"Jika kita tahu sudut setiap sendi robot, di mana ujung tangannya berada?"* — Itulah yang diselesaikan oleh *forward kinematics*.
 
 Proyek ini menjawab pertanyaan tersebut menggunakan pendekatan matematis berbasis **matriks transformasi homogen 4×4**. Setiap joint dimodelkan sebagai transformasi rotasi dan translasi, lalu digabungkan secara berurutan melalui perkalian matriks untuk menghasilkan posisi akhir *end-effector*.
 
 Seluruh perhitungan diimplementasikan dalam Python dan divalidasi langsung di simulator CoppeliaSim — dilengkapi antarmuka slider yang bisa digeser untuk melihat perubahan posisi robot secara real-time.
 
-#Apa yang Bisa Dilakukan Program Ini
+# Apa yang Bisa Dilakukan Program Ini
 
 - Menghitung koordinat (X, Y, Z) *end-effector* berdasarkan sudut keempat joint
 - Menampilkan struktur lengan robot dalam grafik 3D yang diperbarui secara langsung
 - Mengontrol setiap joint melalui slider GUI, dengan rentang −180° hingga +180°
 - Mengirimkan posisi joint ke CoppeliaSim secara otomatis via ZMQ Remote API
 
-#Spesifikasi tinggi Arm Robot
+# Spesifikasi tinggi Arm Robot
 
 | Link       | Panjang |
 |------------|---------|
@@ -32,7 +32,7 @@ Seluruh perhitungan diimplementasikan dalam Python dan divalidasi langsung di si
 | Elbow      | 105 mm  |
 | Wrist      | 50 mm   |
 
-#Cara Kerjanya
+# Cara Kerjanya
 
 Posisi *end-effector* dihitung dari komposisi matriks transformasi seluruh joint:
 
@@ -49,7 +49,7 @@ Setiap `Tᵢ` merupakan gabungan rotasi dan translasi pada joint ke-*i*. Posisi 
 - Tkinter — antarmuka GUI
 - CoppeliaSim + ZMQ Remote API — simulasi robot
 
-#Cara Menjalankan/Running
+# Cara Menjalankan/Running
 
 1. Buka CoppeliaSim dan load scene robot yang sesuai.
 2. Install dependensi yang dibutuhkan:
@@ -82,6 +82,6 @@ Hasil ini menunjukkan ujung robot berada sekitar 235 mm ke arah sumbu Y dan seki
 
 Program ini hanya mendukung *forward kinematics* — artinya input adalah sudut joint, bukan posisi target. Untuk pengembangan berikutnya, beberapa hal yang bisa ditambahkan antara lain *inverse kinematics*, perencanaan lintasan (*trajectory planning*), serta penanganan dinamika robot seperti torsi dan deteksi tabrakan.
 
-#Author
+# Author
 
-**Tegar Fariz Habibi** — Institut Teknologi Sumatera (ITERA), 2025
+**Tegar Fariz Habibi** — Institut Teknologi Sumatera (ITERA), 2026
