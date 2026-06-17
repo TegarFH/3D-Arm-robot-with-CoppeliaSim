@@ -63,6 +63,8 @@ Setiap `Tᵢ` merupakan gabungan rotasi dan translasi pada joint ke-*i*. Posisi 
 ---
 
 #Contoh Hasil
+<img width="1543" height="809" alt="{09834454-E0D2-4199-9D74-ACC3D9DA745E}" src="https://github.com/user-attachments/assets/c6992774-681b-49f2-9156-3730d8b47180" /> <img width="1541" height="817" alt="{5A84DB4F-A0FC-4FD7-AC2D-241328C2FF3A}" src="https://github.com/user-attachments/assets/459a7bf7-1cfc-4836-9505-623a875054f5" />
+
 
 Dengan konfigurasi θ₁=0°, θ₂=−90°, θ₃=26°, θ₄=−69°, diperoleh posisi *end-effector*:
 
