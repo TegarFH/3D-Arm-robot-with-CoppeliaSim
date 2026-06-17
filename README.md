@@ -1,3 +1,7 @@
+<img width="447" height="113" alt="image" src="https://github.com/user-attachments/assets/c1442ea4-67be-4f77-a49b-e24cefb1e3f2" /> 
+
+
+
 # 3D-Arm-robot-with-CoppeliaSim
 Forward Kinematics — 4-DOF Robot Manipulator
 
